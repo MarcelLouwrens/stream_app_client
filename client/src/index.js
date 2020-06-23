@@ -14,6 +14,8 @@ const store = createStore(
 	reducers, composeEnhancers(applyMiddleware(reduxThunk))
 );
 
+// Wrap store around app
+
 ReactDOM.render(
 	<Provider store={store}>
 		<App />
